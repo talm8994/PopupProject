@@ -8,10 +8,21 @@ public class Thing
 	
 	public Thing()
 	{
-	}
-	{
 		age = -99;
 		weight = -.0000005;
 		name = "";
+	}
+	
+	public Thing(String name, int age, double weight)
+	{
+		this.age = age;
+		this.name = name;
+		this.weight = weight;
+	}
+	
+	public String toString()
+	{
+		String thingInfo = " name " + name + " age " + age + " weight " + weight;
+		return thingInfo;
 	}
 }
