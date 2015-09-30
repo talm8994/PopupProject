@@ -10,8 +10,8 @@ import javax.swing.JOptionPane;
 public class PopupDisplay
 {
 	/**
-	 * Poviddes a popup box for asking questions and allows the user to submit a text answer.
-	 * Returns the user respose as a String.
+	 * Provides a popup box for asking questions and allows the user to submit a text answer.
+	 * Returns the user responce as a String.
 	 * @param input the supplied question for the popup.
 	 * @return the user's answer the suplied question.
 	 */

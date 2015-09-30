@@ -12,6 +12,9 @@ public class PopupController
 	}
 	
 	public void start()
+	/**
+	 * starts the import system.
+	 */
 	{
 		String name = myPopups.getAnswer(" Type in your name ");
 		
@@ -19,6 +22,12 @@ public class PopupController
 		
 		int age;
 		String tempAge = myPopups.getAnswer(" type in your age ");
+		
+		while(!isInteger(tempAge))
+		{
+			tempAge = myPopups.getAnswer("type in a integer value!!!!!");
+		}
+		
 		myPopups.displayResponse(" you typed age ");
 		if(isInteger(tempAge))
 		{
@@ -34,6 +43,11 @@ public class PopupController
 		double weight;
 		String tempWeight = myPopups.getAnswer("type in our weight");
 		myPopups.displayResponse("you typed in weight");
+		while(!isDouble(tempWeight))
+		{
+			tempWeight = myPopups.getAnswer("Give me valid double value!");
+		}
+		
 		if(isDouble(tempWeight))
 		{
 			weight =Double.parseDouble(tempWeight);
@@ -66,7 +80,11 @@ public class PopupController
 	}
 		
 	
-
+/**
+ * it 
+ * @param input
+ * @return
+ */
 	private boolean isDouble(String input)
 	{
 		boolean isDouble = false;
